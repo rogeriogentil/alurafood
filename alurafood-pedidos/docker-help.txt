@@ -1,0 +1,2 @@
+docker build -t alurafood-pedidos-db .
+docker run -d --name alurafood-pedidos-db -p 3307:3306 alurafood-pedidos-db:latest

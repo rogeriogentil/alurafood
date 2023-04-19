@@ -1,0 +1,2 @@
+docker build -t alurafood-pagamentos-db .
+docker run -d --name alurafood-pagamentos-db -p 3306:3306 alurafood-pagamentos-db:latest

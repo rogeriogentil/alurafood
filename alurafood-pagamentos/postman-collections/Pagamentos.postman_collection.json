@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "4ef663f3-92fa-427c-bd8e-6b245e3c810f",
+		"name": "Pagamentos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ver Pagamento",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/alurafood-pagamentos-ms/pagamentos/v1/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"alurafood-pagamentos-ms",
+						"pagamentos",
+						"v1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Pagamentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8082/alurafood-pagamentos-ms/pagamentos/v1",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"alurafood-pagamentos-ms",
+						"pagamentos",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Confirmar Pagamento",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/alurafood-pagamentos-ms/pagamentos/v1/1/confirmar",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"alurafood-pagamentos-ms",
+						"pagamentos",
+						"v1",
+						"1",
+						"confirmar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Pagamento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"pedidoId\": 9,\n    \"valor\": 6.9,\n    \"nome\": \"Rogerio J. Gentil\",\n    \"formaDePagamentoId\": 1,\n    \"numero\": \"123456789\",\n    \"expiracao\": \"10/29\",\n    \"codigo\": \"123\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/alurafood-pagamentos-ms/pagamentos/v1",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"alurafood-pagamentos-ms",
+						"pagamentos",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

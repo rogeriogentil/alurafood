@@ -1,0 +1,5 @@
+# alurafood-pagamentos by Rogerio J.
+
+# Build
+
+./mvnw clean install

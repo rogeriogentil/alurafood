@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "2f44f0d8-6e62-4630-8d11-acf94c7e4483",
+		"name": "Pedidos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Realizar Pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"itens\": [\n        {\n            \"descricao\": \"Sorvete\",\n            \"quantidade\": 1\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/alurafood-pedidos-ms/pedidos/v1",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"alurafood-pedidos-ms",
+						"pedidos",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Pedidos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8082/alurafood-pedidos-ms/pedidos/v1",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"alurafood-pedidos-ms",
+						"pedidos",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ver Pedido",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8082/alurafood-pedidos-ms/pedidos/v1/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"alurafood-pedidos-ms",
+						"pedidos",
+						"v1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Status",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\": \"REALIZADO\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8082/alurafood-pedidos-ms/pedidos/v1/1/status",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"alurafood-pedidos-ms",
+						"pedidos",
+						"v1",
+						"1",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
