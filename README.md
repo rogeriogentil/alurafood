@@ -1,7 +1,7 @@
 # alurafood (por Rogerio J.)
 
 Esse é um projeto de aplicações de microsserviços desenvolvidas durante o curso 
-[Microsserviços na prática: Implementando com Java e Spring|https://cursos.alura.com.br/course/microsservicos-implementando-java-spring]
+[Microsserviços na prática: Implementando com Java e Spring](https://cursos.alura.com.br/course/microsservicos-implementando-java-spring)
 da Alura.
 
 # Aplicações
@@ -9,12 +9,12 @@ da Alura.
 ## alurafood-server
 
 Aplicação que executa o _service discovery_ usando Eureka do 
-[Spring Cloud Netlfix|https://spring.io/projects/spring-cloud-netflix]
+[Spring Cloud Netlfix](https://spring.io/projects/spring-cloud-netflix).
 
 ## alurafood-gateway
 
 Aplicação que executa o serviço de _gateway_ e _loading balancing_ usando 
-[Spring Cloud Gateway|https://spring.io/projects/spring-cloud-gateway]
+[Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway).
 
 ## alurafood-pagamentos
 
