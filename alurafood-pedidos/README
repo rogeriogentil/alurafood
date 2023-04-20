@@ -1,6 +1,6 @@
 # alurafood-pagamentos (por Rogerio J.)
 
-Aplicação microsserviço referente ao domínio de pagamentos.
+Aplicação microsserviço referente ao domínio de pedidos.
 
 # Pré-requisitos
 
@@ -13,13 +13,13 @@ Aplicação microsserviço referente ao domínio de pagamentos.
 
 ## Construção da imagem do SGBD
 
-    docker build -t alurafood-pagamentos-db .
+    docker build -t alurafood-pedidos-db .
 
 # Execução
 
 1. Rodar o container do SGBD:
 
-    docker run -d --name alurafood-pagamentos-db -p 3306:3306 alurafood-pagamentos-db:latest
+    docker run -d --name alurafood-pedidos-db -p 3307:3306 alurafood-pedidos-db:latest
 
 2. Inicilizar aplicação 
 
